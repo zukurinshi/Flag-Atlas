@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Card from "./components/Cards";
+import { Routes, Route } from "react-router-dom";
 import Gallery from "./components/Gallery";
-import SortButton from "./components/SortBtn";
+import CountryDetail from "./pages/CountryDetails";
+
 function App() {
   const [flags, setFlags] = useState([]);
 
@@ -13,7 +14,10 @@ function App() {
 
   return (
     <>
-      <Gallery />
+      <Routes>
+        <Route path="/" element={<Gallery/>} />
+        <Route path="/country_details/:id" element={<CountryDetail/>}/>
+      </Routes>
     </>
   );
 }

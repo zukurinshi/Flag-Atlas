@@ -6,11 +6,17 @@ import FilterOptions from "./FilterOptions";
 import StartingLetter from "./Letters";
 import SearchButton from "./SearchBtn";
 useState;
+
 function Gallery() {
   const [selectedContinent, setSelectedContinent] = useState("");
   const [selectedDesign, setSelectedDesign] = useState("");
   const [isReversed, setIsReversed] = useState(false);
   const [selectedLetter, setSelectedLetter] = useState("");
+  const [onSearch,setOnSearch] = useState("");
+
+  const handleSearch = () => {
+
+  }
 
   const handleLetterClick = (letter) => {
     if(letter == ""){

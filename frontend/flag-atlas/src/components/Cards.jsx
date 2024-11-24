@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 function Card({ sort, selectedLetter, selectedContinent, selectedDesign }) {
   const [flags, setFlags] = useState([]);
 
@@ -9,27 +9,28 @@ function Card({ sort, selectedLetter, selectedContinent, selectedDesign }) {
       .then((data) => setFlags(data));
   }, []);
 
-  // Filter by letter
+
   let filteredFlags = selectedLetter 
     ? flags.filter((flag) => flag.name.startsWith(selectedLetter))
     : flags;
 
-  // Filter by continent
+ 
   filteredFlags = selectedContinent 
     ? filteredFlags.filter((flag) => flag.continent === selectedContinent)
     : filteredFlags;
 
-  // Filter by design
+
   filteredFlags = selectedDesign 
     ? filteredFlags.filter((flag) => flag.design === selectedDesign)
     : filteredFlags;
 
-  // Sort logic
+
   const alphabetical = sort ? [...filteredFlags].reverse() : filteredFlags;
 
   return (
     <>
       {alphabetical.map((flag) => (
+        <Link to={`/country_details/${flag.id}`}>
         <div
           key={flag.id}
           className="cursor-pointer font-montserrat transition ease-in-out duration-500 hover:-translate-y-4"
@@ -44,6 +45,7 @@ function Card({ sort, selectedLetter, selectedContinent, selectedDesign }) {
             {flag.name}
           </h2>
         </div>
+        </Link>
       ))}
     </>
   );

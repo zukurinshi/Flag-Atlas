@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function StartingLetter({ onLetterClick }) {
   const [selectedLetter, setSelectedLetter] = useState("");
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
 
   const handleClick = (letter) => {
     setSelectedLetter(letter);

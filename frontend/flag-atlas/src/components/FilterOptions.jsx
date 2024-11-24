@@ -18,7 +18,7 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
         <p
           className={`${
             activeContinent === "Africa" ? "bg-blue-500 text-white" : "text-black"
-          } text-white p-2 rounded`}
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("Africa")}
         >
           Africa
@@ -27,8 +27,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeContinent === "Asia" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeContinent === "Asia" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("Asia")}
         >
           Asia
@@ -38,9 +38,9 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
         <p
           className={`${
             activeContinent === "Australia & Oceania"
-              ? "bg-blue-500"
+              ? "bg-blue-500 text-white"
               : "text-black"
-          } text-white p-2 rounded`}
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("Australia & Oceania")}
         >
           Australia & Oceania
@@ -49,8 +49,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeContinent === "Europe" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeContinent === "Europe" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("Europe")}
         >
           Europe
@@ -59,8 +59,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeContinent === "North America" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeContinent === "North America" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("North America")}
         >
           North America
@@ -69,8 +69,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeContinent === "South America" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeContinent === "South America" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleContinentClick("South America")}
         >
           South America
@@ -79,8 +79,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeDesign === "stripe" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeDesign === "stripe" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleDesignClick("stripe")}
         >
           Color stripes
@@ -89,8 +89,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeDesign === "stripeS" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeDesign === "stripeS" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleDesignClick("stripeS")}
         >
           Color stripes with Symbols
@@ -99,8 +99,8 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
       <div className="filters flex items-center   py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
-            activeDesign === "plain" ? "bg-blue-500" : "text-black"
-          } text-white p-2 rounded`}
+            activeDesign === "plain" ? "bg-blue-500 text-white" : "text-black"
+          }  p-2 rounded`}
           onClick={() => handleDesignClick("plain")}
         >
           Symbols

@@ -15,7 +15,7 @@ function StartingLetter({ onLetterClick }) {
   };
 
   return (
-    <div className="flex space-x-3 w-full">
+    <div className="flex font-inter space-x-3 w-full">
       <p
         onClick={handleAllClick}
         className={`cursor-pointer  ${

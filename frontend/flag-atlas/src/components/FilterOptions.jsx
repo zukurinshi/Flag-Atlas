@@ -14,7 +14,7 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
   };
   return (
     <>
-      <div className="filters flex items-center  py-3 px-1 cursor-pointer justify-between">
+      <div className="filters font-inter flex items-center  py-3 px-1 cursor-pointer justify-between">
         <p
           className={`${
             activeContinent === "Africa" ? "bg-blue-500 text-white" : "text-black"
@@ -103,7 +103,7 @@ function FilterOptions({ onContinentClick, onDesignClick }) {
           }  p-2 rounded`}
           onClick={() => handleDesignClick("plain")}
         >
-          Symbols
+          Plain Symbols
         </p>
       </div>
     </>

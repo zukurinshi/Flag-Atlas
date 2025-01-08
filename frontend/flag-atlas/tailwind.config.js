@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily:{
         montserrat:['Montserrat','sans-serif'],
+        inter:['Inter','sans-serif'],
+        oswald:['Oswald','sans-serif']
       }
     },
   },

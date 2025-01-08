@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Card from "./Cards";
 import SortButton from "./SortBtn";
-import FilterButton from "./FilterBtn";
 import FilterOptions from "./FilterOptions";
 import StartingLetter from "./Letters";
 import SearchButton from "./SearchBtn";
+import { motion } from "framer-motion";
 useState;
 
 function Gallery() {
@@ -12,19 +12,16 @@ function Gallery() {
   const [selectedDesign, setSelectedDesign] = useState("");
   const [isReversed, setIsReversed] = useState(false);
   const [selectedLetter, setSelectedLetter] = useState("");
-  const [onSearch,setOnSearch] = useState("");
+  const [onSearch, setOnSearch] = useState("");
 
-  const handleSearch = () => {
-
-  }
+  const handleSearch = () => {};
 
   const handleLetterClick = (letter) => {
-    if(letter == ""){
+    if (letter == "") {
       setSelectedContinent("");
       setSelectedDesign("");
       setSelectedLetter("");
-    }
-    else {
+    } else {
       setSelectedLetter(letter);
     }
   };
@@ -34,15 +31,20 @@ function Gallery() {
   };
 
   const handleContinentClick = (continent) => {
-    setSelectedContinent(setSelectedContinent === continent ? "":continent);
+    setSelectedContinent(setSelectedContinent === continent ? "" : continent);
   };
 
   const handleDesignClick = (design) => {
-    setSelectedDesign(setSelectedDesign === design? "":design);
+    setSelectedDesign(setSelectedDesign === design ? "" : design);
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="sort-container space-x-3 px-12 pt-6 flex w-full ">
         <SortButton toggleSort={toggleSort} isReversed={isReversed} />
         <FilterOptions
@@ -62,7 +64,7 @@ function Gallery() {
           selectedDesign={selectedDesign}
         />
       </div>
-    </>
+    </motion.div>
   );
 }
 

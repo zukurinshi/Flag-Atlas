@@ -3,7 +3,7 @@ function SortButton({toggleSort,isReversed}) {
     const alphabetical = "(A-Z)";
     const isAlphabetical = isReversed?alphabetical:reverse;
   return (
-    <div onClick={toggleSort} className="flex items-center hover:bg-gray-100  py-3 px-2 border rounded-md shadow-sm cursor-pointer justify-between">
+    <div onClick={toggleSort} className="flex items-center font-inter hover:bg-gray-100  py-3 px-2 border rounded-md shadow-sm cursor-pointer justify-between">
       <p>Sort {isAlphabetical}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"

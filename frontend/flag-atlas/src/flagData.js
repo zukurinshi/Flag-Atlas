@@ -1176,7 +1176,7 @@ export const flagData = [
     capital: "Zagreb",
     description: {
       geography:
-        "Craotia is located in Southeast Europe, bordered by Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina to the southeast, and Montenegro to the southeast. To the west, it has a long coastline along the Adriatic Sea. The country’s geography includes mountains, plains, and a beautiful coastline, which is popular with tourists. Croatia experiences a Mediterranean climate along the coast and a continental climate inland.",
+        "Croatia is located in Southeast Europe, bordered by Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina to the southeast, and Montenegro to the southeast. To the west, it has a long coastline along the Adriatic Sea. The country’s geography includes mountains, plains, and a beautiful coastline, which is popular with tourists. Croatia experiences a Mediterranean climate along the coast and a continental climate inland.",
       history:
         "Croatia has a long history that dates back to the medieval kingdom of Croatia. It was part of the Austro-Hungarian Empire and later Yugoslavia. Croatia gained independence from Yugoslavia in 1991, leading to a war of independence. After achieving peace and stability, Croatia became a member of the European Union in 2013.",
       economy:

@@ -20,7 +20,7 @@ const db = mysql.createConnection({
 app.use("/images", express.static(path.join(__dirname, "../frontend/flag-atlas/public/world flags")));
 
 //COUNTRY FLAGS ROUTE
-app.get("/api/country-details", (res) => {
+app.get("/api/country-details", (req,res) => {
   const query = "SELECT * FROM countries";
   db.query(query, (err, results) => {
     if (err) {
@@ -48,7 +48,7 @@ app.get("/api/country-details/:id", (req, res) => {
 });
 
 
-app.get("/", ( res) => {
+app.get("/", ( req,res) => {
   res.send("Hello from the backend");
 });
 
